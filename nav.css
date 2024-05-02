@@ -1,0 +1,94 @@
+.box{
+    background-color: green;
+    width: 200px;
+    height: 200px;
+}
+@media only screen and (max-width: 768px){
+    .box{
+        background-color: red;
+    }
+}
+
+:root {
+    --bg-color: #219EBC;
+    --shine-color: #023047;
+    --text-color: white;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo{
+margin: 7 7 8px;
+}
+nav {
+    width: 90%;
+    background-color: var(--bg-color);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 0 8px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+}
+
+ul li {
+    background-color: var(--shine-color);
+    padding: 8px;
+    border-radius: 8px;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 12px;
+    color: var(--text-color);
+}
+
+
+.container{
+    width: 90%;
+    min-height: 67vh;
+    box-shadow: 0 0 10px var(--shine-color);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    width: 100%;
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    color: var(--text-color);
+}
+
+.desc{
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright{
+    text-align: center;
+}
